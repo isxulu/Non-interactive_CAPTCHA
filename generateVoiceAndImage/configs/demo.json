@@ -1,0 +1,40 @@
+{
+  "texts": [
+    "./resources/corpus/top_level_chinese.txt"
+  ],
+  "fonts": [
+    "./resources/font/youyuan.ttf",
+    "./resources/font/fangzheng.ttf",
+    "./resources/font/PingFang_A.ttf"
+  ],
+  "sizes": [
+    44,
+    46,
+    48,
+    50,
+    52
+  ],
+  "colors": [
+    "0x32678b",
+    "0xe61514",
+    "0x3e0ac3"
+  ],
+  "bgs": [
+    "./resources/background"
+  ],
+  "rotate": 30,
+  "dot": 6,
+  "curve": 4,
+  "width": 400,
+  "height": 400,
+  "offset_ver": 150,
+  "offset_hor": 150,
+  "char_tran": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ]
+}
