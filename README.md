@@ -1,4 +1,4 @@
-#### Non-interactive_CAPTCHA
+# Non-interactive_CAPTCHA
 
 > This graduation project covers three different types of CAPTCHAs, including browser fingerprint verification, mouse trajectory verification, and interactive audio-visual verification. The first browser fingerprint verification does not require any user interaction; it collects various attribute information from the user's device and browser to generate a unique fingerprint identifier for identity verification. The second verification uses a click-based unobtrusive verification technology based on mouse trajectories, collecting and analyzing user mouse movement information on the page, including speed, direction, and acceleration, requiring only a mouse click for verification. These two verifications provide sufficient convenience for both regular users and special populations. If the first two verifications fail or are ambiguous, the final image + voice audio-visual CAPTCHA verification is provided, with all three verifications working together to ensure security.
 
