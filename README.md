@@ -10,13 +10,13 @@
 
 ![20230412140709](https://typora-1309407228.cos.ap-shanghai.myqcloud.com/20230412140709.png)
 
-### 运行逻辑
+### Execution logic
 
-1. 用户移动鼠标到checkbox,点击checkbox
-2. 后端根据以下数据判断访问用户风险等级
-   1. 浏览器指纹
-   2. 鼠标轨迹
-3. 如果判断为有风险,弹出图片&语音验证码的modal,如果没有风险,直接通过
+1. The user moves the mouse to the checkbox and clicks on it.
+2. The backend determines the user's risk level of access based on the following data:
+   1. Browser fingerprint
+   2. Mouse trajectory
+3. If a risk is detected, a modal with image and voice captcha is displayed. If no risk is detected, access is granted directly.
 
 ### 更新日志
 
