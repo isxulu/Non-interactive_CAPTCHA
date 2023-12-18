@@ -21,31 +21,33 @@
 ### Update Log
 
 3.25
-1. 鼠标轨迹&时间戳捕捉
-2. 浏览器指纹生成
-3. 后端逻辑代码
-   1. 高频请求ban
-   2. 执行本地python模型
+1. Capture mouse trajectory and timestamps.
+2. Generate browser fingerprint.
+3. Backend logic code:
+   1. Ban high-frequency requests.
+   2. Execute local Python model.
 
 4.12
-1. 接上了后端python模型
-2. 美化了验证码样式
+1. Integrated the backend Python model.
+2. Enhanced the style of the captcha.
 
 4.21
-1. 增加了点击图片验证码
+1. Added image captcha on click.
 
 4.22
-1. 完善了判断逻辑
+1. Improved the judgment logic.
 
 4.24
-1. 增加了浏览器环境风险因素检测
-   1. webgl 浏览器类型 & user agent浏览器类型 & platform浏览器类型
-   2. webdriver
-   3. plugins
+1. Added browser environment risk factor detection:
+   1. WebGL browser type.
+   2. User agent browser type.
+   3. Platform browser type.
+   4. Webdriver.
+   5. Plugins.
 
 4.25
-1. 增加了对于接收到的风险因素的综合判断
-
+1. Enhanced comprehensive judgment of received risk factors.
+   
 ### TODO
 
 1. 自定义浏览器指纹
@@ -60,12 +62,12 @@
    1. 测试从LSTM -> XGBoost -> 数据增广后的XGBoost的识别准确率的变化(鼠标轨迹部分)
    2. 测试图片语音验证码的识别准确率
 
-### 踩坑记录
+### Pitfall records
 
-1. js里对于对象的遍历不是顺序的
-2. 事件冒泡问题
-3. 记得给每个element加key
-4. 使用useReducer代替useState
-5. 对于一些response可以考虑常量硬编码
-   1. 硬编码的时候注意作用域！！！
-   2. nextResponse声明在最顶层后，多次请求api会造成readable stream lock的错误，推测是由于每次请求返回的都是相同的nextResponse导致的
+1. Object iteration in JavaScript is not guaranteed to be in order.
+2. Event bubbling issue.
+3. Remember to assign a unique key to each element.
+4. Consider using `useReducer` instead of `useState`.
+5. For certain responses, consider hard-coding constants.
+   1. Pay attention to the scope when hard-coding!
+   2. Declaring `nextResponse` at the top level may cause a "readable stream lock" error when making multiple API requests, possibly due to receiving the same `nextResponse` repeatedly.
