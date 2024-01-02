@@ -50,17 +50,17 @@
    
 ### TODO
 
-1. 自定义浏览器指纹
-2. ~~接入后端python模型~~
-3. ~~图片&语音验证码~~
-   1. ~~细化完善~~
-4. ~~**根据浏览器环境判断访问风险**~~
-5. ~~后端模型似乎还有一点问题(基本上都是pass)~~
-6. ~~完善判断逻辑~~
-7. ~~根据获得的风险因素,判断访问者的风险~~
-8. 识别准确率的测试
-   1. 测试从LSTM -> XGBoost -> 数据增广后的XGBoost的识别准确率的变化(鼠标轨迹部分)
-   2. 测试图片语音验证码的识别准确率
+1. ~~Custom browser fingerprinting.~~
+2. ~~Integration with backend Python model.~~
+3. ~~Image & audio captcha.~~
+   1. ~~Refinement and improvement.~~
+4. ~~**Detecting access risk based on browser environment.**~~
+5. ~~There seems to be a slight issue with the backend model (mostly passing).~~
+6. ~~Refine the detection logic.~~
+7. ~~Assess visitor risk based on obtained risk factors.~~
+8. ~~Testing recognition accuracy.~~
+   1. Test the change in recognition accuracy from LSTM -> XGBoost -> XGBoost with data augmentation (for mouse trajectory part).
+   2. Test the recognition accuracy of image and audio captcha.
 
 ### Pitfall records
 
